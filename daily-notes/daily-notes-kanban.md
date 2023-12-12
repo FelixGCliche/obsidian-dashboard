@@ -5,6 +5,7 @@ kanban-plugin: detailed
 ---
 
 ## TO DO
+- [ ] <h4>Start character model sheet</h4>Start working on main character design [start::2023-12-12] [due::2023-12-12] #task
 
 
 
