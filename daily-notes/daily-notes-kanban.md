@@ -10,11 +10,11 @@ kanban-plugin: detailed
 
 ## IN PROGRESS
 
-- [ ] <h4>title</h4>description *with italic* [start::2023-12-11] [due::2023-12-12] #task
 
 
 ## DONE
 
+- [x] #task <h4>Setup dashboard git repo android </h4>Setup git repo for obsidian dashboard  [start:: 2023-12-12]  [due:: 2023-12-12]
 
 
 
