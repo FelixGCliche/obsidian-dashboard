@@ -1,0 +1,12 @@
+{
+  "accentColor": "",
+  "cssTheme": "Minimal",
+  "theme": "obsidian",
+  "interfaceFontFamily": "Source Code Pro",
+  "textFontFamily": "Source Code Pro",
+  "translucency": false,
+  "enabledCssSnippets": [
+    "headings",
+    "tasks"
+  ]
+}

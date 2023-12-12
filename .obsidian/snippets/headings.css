@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'PP Neue Machina Plain';
+  src: local('PP Neue Machina Plain Light');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PP Neue Machina Plain Regular';
+  src: local('PP Neue Machina Plain');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+body {
+  --h1-size: 52px;
+  --h1-font: 'PP Neue Machina Plain';
+  --h1-weight: 300;
+  --h1-color: #8fbcbb;
+  
+  --h2-size: 37px;
+  --h2-font: 'PP Neue Machina Plain';
+  --h2-weight: 300;
+  --h2-color: #8fbcbb;
+  
+  --h3-size: 26px;
+  --h3-font: 'PP Neue Machina Plain';
+  --h3-weight: 400;
+  --h3-color: #8fbcbb;
+  
+  --h4-size: 22px;
+  --h4-font: 'PP Neue Machina Plain';
+  --h4-weight: 400;
+  --h4-color: #8fbcbb;
+}
+
+.inline-title {
+  font-family: var(--h4-font);
+  font-size: var(--h4-size);
+  font-weight: var(--h4-weight);
+  color:#4c566a;
+}
+.inline-title:focus {
+  color: var(--h4-color);
+}

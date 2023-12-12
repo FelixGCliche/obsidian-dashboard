@@ -1,0 +1,74 @@
+{
+  "choices": [
+    {
+      "id": "d9eb507a-6b15-4bfd-8d46-182e8ec3fdc3",
+      "name": "task-create",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "daily-notes/daily-notes-kanban.md",
+      "captureToActiveFile": false,
+      "createFileIfItDoesntExist": {
+        "enabled": false,
+        "createWithTemplate": false,
+        "template": "templates/daily-note-template.md"
+      },
+      "format": {
+        "enabled": true,
+        "format": "<h4>{{VALUE:title}}</h4>{{VALUE:description}} [start::{{date}}] [due::{{VDATE:DATE,gggg-MM-DD}}] #task"
+      },
+      "insertAfter": {
+        "enabled": true,
+        "after": "## TO DO",
+        "insertAtEnd": true,
+        "considerSubsections": true,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "bottom"
+      },
+      "prepend": false,
+      "task": true,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default"
+    }
+  ],
+  "macros": [
+    {
+      "name": "macro-kanban",
+      "id": "1f5d7e87-c8bc-44b2-9cd0-059fc0743e0f",
+      "commands": [
+        {
+          "name": "task-kanban",
+          "type": "Choice",
+          "id": "127b43a2-70c0-4ab7-8d9e-75a8804b3238",
+          "choiceId": "64bf0c7d-772a-435a-8558-0e67aed97c3a"
+        }
+      ],
+      "runOnStartup": false
+    }
+  ],
+  "inputPrompt": "single-line",
+  "devMode": false,
+  "templateFolderPath": "templates",
+  "announceUpdates": true,
+  "version": "1.6.1",
+  "disableOnlineFeatures": true,
+  "ai": {
+    "OpenAIApiKey": "",
+    "defaultModel": "Ask me",
+    "defaultSystemPrompt": "As an AI assistant within Obsidian, your primary goal is to help users manage their ideas and knowledge more effectively. Format your responses using Markdown syntax. Please use the [[Obsidian]] link format. You can write aliases for the links by writing [[Obsidian|the alias after the pipe symbol]]. To use mathematical notation, use LaTeX syntax. LaTeX syntax for larger equations should be on separate lines, surrounded with double dollar signs ($$). You can also inline math expressions by wrapping it in $ symbols. For example, use $$w_{ij}^{\text{new}}:=w_{ij}^{\text{current}}+etacdotdelta_jcdot x_{ij}$$ on a separate line, but you can write \"($eta$ = learning rate, $delta_j$ = error term, $x_{ij}$ = input)\" inline.",
+    "promptTemplatesFolderPath": "",
+    "showAssistant": true
+  },
+  "migrations": {
+    "migrateToMacroIDFromEmbeddedMacro": true,
+    "useQuickAddTemplateFolder": true,
+    "incrementFileNameSettingMoveToDefaultBehavior": true,
+    "mutualExclusionInsertAfterAndWriteToBottomOfFile": true,
+    "setVersionAfterUpdateModalRelease": true
+  }
+}
