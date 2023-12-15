@@ -7,6 +7,7 @@ kanban-plugin: detailed
 ## TO DO
 
 - [ ] <h4>Cuisine cadeaux</h4> [start::2023-12-15] [due::2023-12-20] #task
+- [ ] <h4>Magasinage ingrédients</h4> [start::2023-12-15] [due::2023-12-15] #task
 
 
 ## IN PROGRESS
